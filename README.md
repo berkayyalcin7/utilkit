@@ -5,13 +5,13 @@ Zero-dependency devkit for everyday JavaScript/TypeScript utilities. Pure functi
 ## Install
 
 ```bash
-npm install utilkit
+npm install @berkayyalcin/utilkit
 ```
 
 ## Quick Start
 
 ```ts
-import { base64Encode, base64Decode, stringLength, byteLength, safeJsonParse } from "utilkit";
+import { base64Encode, base64Decode, stringLength, byteLength, safeJsonParse } from "@berkayyalcin/utilkit";
 
 base64Encode("Türkçe metin 🎉");        // Unicode-safe, unlike native btoa
 base64Decode("not-valid-base64");        // null, never throws
@@ -27,9 +27,9 @@ safeJsonParse("not json", { empty: true }); // { empty: true } — fallback valu
 You can also import from a specific category for smaller bundles:
 
 ```ts
-import { base64Encode } from "utilkit/encoding";
-import { stringLength } from "utilkit/text";
-import { safeJsonParse } from "utilkit/data";
+import { base64Encode } from "@berkayyalcin/utilkit/encoding";
+import { stringLength } from "@berkayyalcin/utilkit/text";
+import { safeJsonParse } from "@berkayyalcin/utilkit/data";
 ```
 
 ## API

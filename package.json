@@ -1,6 +1,9 @@
 {
-  "name": "utilkit",
+  "name": "@berkayyalcin/utilkit",
   "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Zero-dependency devkit for everyday JavaScript/TypeScript utilities: Unicode-safe Base64, correct string length, and safe JSON parsing.",
   "type": "module",
   "main": "./dist/index.cjs",
